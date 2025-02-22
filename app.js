@@ -3,6 +3,11 @@ let numerosSorteados = [];
 let numeroSecreto;
 let intentos;
 
+function main() {
+    asignarTextElemento("h1", "Juego del numero secreto!");
+    reiniciarJuego();
+}
+
 function generarNumeroSecreto(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
@@ -69,5 +74,4 @@ function asignarTextElemento(elemento, texto) {
     elementoHTML.innerHTML = texto;
 }
 
-asignarTextElemento("h1", "Juego del numero secreto!");
-reiniciarJuego();
+main();
